@@ -1,9 +1,18 @@
+<<<<<<< Updated upstream
 department_site_advert:
     resource: "@DepartmentSiteAdvertBundle/Resources/config/routing.yml"
     prefix:   /
 
 department_site_news:
     resource: "@DepartmentSiteNewsBundle/Resources/config/routing.yml"
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
+
+department_site_news_news:
+    resource: "@DepartmentSiteNewsBundle/Controller/NewsController.php"
+    type:     annotation
     prefix:   /
 
 admin:
@@ -41,3 +50,7 @@ sonata_user_admin_security:
 sonata_user_admin_resetting:
     resource: '@SonataUserBundle/Resources/config/routing/admin_resetting.xml'
     prefix: /admin/resetting
+
+fos_js_routing:
+    resource: "@FOSJsRoutingBundle/Resources/config/routing/routing.xml"
+

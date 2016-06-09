@@ -21,6 +21,10 @@ class NewsController extends Controller
      * Lists all News entities.
      *
      * @Route("/",
+<<<<<<< Updated upstream
+=======
+     *     options={"expose"=true},
+>>>>>>> Stashed changes
      *     name = "news_index"
      * )
      * @Method("GET")
@@ -30,9 +34,11 @@ class NewsController extends Controller
         $em = $this->getDoctrine()->getManager();
         $news = $em->getRepository('DepartmentSiteNewsBundle:News')->findAll();
 
-        return $this->render('news/index.html.twig', array(
-            'news' => $news,
-        ));
+//        return $this->render('news/index.html.twig', array(
+//            'news' => $news,
+//        ));
+
+        return $this->render('news/news.html.twig');
     }
 
     /**
@@ -163,6 +169,8 @@ class NewsController extends Controller
     }
 
     public function getOne(News $news) {
+       // $deleteForm = $this->createDeleteForm($news);
+
         $serialized = $this->container->get('serializer')->serialize($news, 'json');
         return new Response($serialized);
     }

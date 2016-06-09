@@ -29,7 +29,12 @@ class AppKernel extends Kernel
             new Sonata\UserBundle\SonataUserBundle('FOSUserBundle'),
             new Application\Sonata\UserBundle\ApplicationSonataUserBundle(),
             new JMS\SerializerBundle\JMSSerializerBundle(),
+<<<<<<< Updated upstream
             new DepartmentSite\AdvertBundle\DepartmentSiteAdvertBundle(),
+=======
+            new Symfony\Bundle\AsseticBundle\AsseticBundle(),
+            new FOS\JsRoutingBundle\FOSJsRoutingBundle(),
+>>>>>>> Stashed changes
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

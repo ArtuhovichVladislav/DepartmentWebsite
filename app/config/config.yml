@@ -2,7 +2,12 @@ imports:
     - { resource: parameters.yml }
     - { resource: security.yml }
     - { resource: services.yml }
+<<<<<<< Updated upstream
     - { resource: "@DepartmentSiteNewsBundle/Resources/config/services.yml" }
+=======
+#    - { resource: "@DepartmentSiteNewsBundle/Resources/config/services.yml" }
+#    - { resource: "@DepartmentSiteNewsBundle/Resources/config/admin.yml" }
+>>>>>>> Stashed changes
     - { resource: "../../vendor/knplabs/doctrine-behaviors/config/orm-services.yml" }
     - { resource: "@DepartmentSiteAdvertBundle/Resources/config/services.yml" }
 
@@ -116,3 +121,12 @@ fos_user:
 
     service:
       user_manager: sonata.user.orm.user_manager
+
+assetic:
+    debug:          '%kernel.debug%'
+    use_controller: '%kernel.debug%'
+    filters:
+        cssrewrite: ~
+
+fos_js_routing:
+    routes_to_expose: [ 'news_index' ]

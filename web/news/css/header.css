@@ -1,0 +1,34 @@
+/* line 7, ../../app/styles/header.scss */
+.header .nav > li > a {
+  box-sizing: border-box;
+  font-weight: bold;
+  margin: 0 15px;
+  padding-left: 0;
+  padding-bottom: 0;
+  padding-right: 0;
+}
+/* line 15, ../../app/styles/header.scss */
+.header .nav > li > a:hover, .header .nav > li > a:focus {
+  border-bottom: 2px solid #fdd400;
+}
+/* line 21, ../../app/styles/header.scss */
+.header .navbar {
+  border: none;
+}
+/* line 25, ../../app/styles/header.scss */
+.header .navbar-left > li:first-child > a {
+  margin-left: 0;
+}
+/* line 29, ../../app/styles/header.scss */
+.header .navbar-right > li:last-child > a {
+  margin-right: 0;
+}
+/* line 33, ../../app/styles/header.scss */
+.header .navbar-collapse {
+  padding-left: 0;
+  padding-right: 0;
+}
+/* line 38, ../../app/styles/header.scss */
+.header .navbar-right {
+  margin-right: 0;
+}
