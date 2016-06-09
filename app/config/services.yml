@@ -4,16 +4,16 @@ parameters:
 #    parameter_name: value
 
 services:
-    sonata.admin.news:
-            class: DepartmentSite\NewsBundle\Admin\NewsAdmin
-            tags:
-                - { name: sonata.admin, manager_type: orm, group: "News", label: "News" }
-            arguments:
-                - ~
-                - DepartmentSite\NewsBundle\Entity\News
-                - ~
-            calls:
-                - [ setTranslationDomain, [DepartmentSiteNewsBundle]]
+#    sonata.admin.news:
+#            class: DepartmentSite\NewsBundle\Admin\NewsAdmin
+#            tags:
+#                - { name: sonata.admin, manager_type: orm, group: "News", label: "News" }
+#            arguments:
+#                - ~
+#                - DepartmentSite\NewsBundle\Entity\News
+#                - ~
+#            calls:
+#                - [ setTranslationDomain, [DepartmentSiteNewsBundle]]
 #    service_name:
 #        class: AppBundle\Directory\ClassName
 #        arguments: ["@another_service_name", "plain_value", "%parameter_name%"]
@@ -21,7 +21,7 @@ services:
         class: DepartmentSite\AdvertBundle\Admin\AdvertAdmin
         arguments: [~, DepartmentSite\AdvertBundle\Entity\Advert, ~]
         tags:
-            - { name: sonata.admin, manager_type: orm, group: "Advert", label: Advert }
+            - { name: sonata.admin, manager_type: orm, group: "Advert", label: "Advert" }
         calls:
               - [ setTranslationDomain, [DepartmentSiteAdvertBundle]]
 

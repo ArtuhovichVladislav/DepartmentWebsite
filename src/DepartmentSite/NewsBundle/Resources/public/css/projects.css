@@ -1,0 +1,102 @@
+/* line 12, ../../app/styles/projects.scss */
+.head-text {
+  font-family: CirceExtraBold, sans-serif;
+  font-size: 23px;
+  color: #373737;
+  margin-top: 60px;
+  margin-bottom: 54px;
+}
+
+/* line 21, ../../app/styles/projects.scss */
+.search-form {
+  margin-bottom: 50px;
+}
+/* line 22, ../../app/styles/projects.scss */
+.search-form input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #b9c1d0;
+  padding-left: 30px;
+}
+/* line 31, ../../app/styles/projects.scss */
+.search-form input::-webkit-input-placeholder {
+  font-family: CirceRegular, sans-serif;
+  font-weight: 100;
+  font-size: 14px;
+  color: #b9c1d0;
+}
+/* line 34, ../../app/styles/projects.scss */
+.search-form input::-moz-placeholder {
+  font-family: CirceRegular, sans-serif;
+  font-weight: 100;
+  font-size: 14px;
+  color: #b9c1d0;
+}
+/* line 37, ../../app/styles/projects.scss */
+.search-form input:-moz-placeholder {
+  font-family: CirceRegular, sans-serif;
+  font-weight: 100;
+  font-size: 14px;
+  color: #b9c1d0;
+}
+/* line 40, ../../app/styles/projects.scss */
+.search-form input:-ms-input-placeholder {
+  font-family: CirceRegular, sans-serif;
+  font-weight: 100;
+  font-size: 14px;
+  color: #b9c1d0;
+}
+
+/* line 45, ../../app/styles/projects.scss */
+.post-list {
+  margin-bottom: 116px;
+}
+
+/* line 50, ../../app/styles/projects.scss */
+.post-block {
+  margin-bottom: 50px;
+}
+
+/* line 54, ../../app/styles/projects.scss */
+.post-header {
+  font-family: CirceBold, sans-serif;
+  font-size: 23px;
+  color: #373737;
+  box-sizing: inherit;
+  margin-bottom: 10px;
+}
+
+/* line 63, ../../app/styles/projects.scss */
+.post-author {
+  font-family: CirceRegular, sans-serif;
+  font-size: 14px;
+  color: #373737;
+  margin-top: 10px;
+  margin-bottom: 14px;
+}
+
+/* line 72, ../../app/styles/projects.scss */
+.post-links {
+  font-family: CirceRegular, sans-serif;
+  font-size: 14px;
+  color: #5c9bd1;
+  line-height: 10px;
+  margin-top: 14px;
+}
+
+/* line 81, ../../app/styles/projects.scss */
+.reviews-link {
+  padding-right: 8px;
+}
+
+/* line 85, ../../app/styles/projects.scss */
+.comments-link {
+  padding-left: 8px;
+}
+
+/* line 89, ../../app/styles/projects.scss */
+.line {
+  border-left: 1px solid #373737;
+  display: inline;
+  margin: 8px;
+}

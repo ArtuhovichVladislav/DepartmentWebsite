@@ -1,0 +1,214 @@
+@font-face {
+  font-family: CirceRegular;
+  src: url("../fonts/circe/CRC55.otf");
+}
+@font-face {
+  font-family: CirceBold;
+  src: url("../fonts/circe/Circe-Bold.otf");
+}
+@font-face {
+  font-family: CirceExtraBold;
+  src: url("../fonts/circe/Circe-ExtraBold.otf");
+}
+/* line 13, ../../app/styles/news.scss */
+body {
+  font-family: "../fonts/circe/CRC55.otf", "CirceRegular";
+}
+
+/* line 18, ../../app/styles/news.scss */
+a:hover {
+  color: #fdd400;
+}
+
+/* line 23, ../../app/styles/news.scss */
+.row {
+  margin-left: -15px;
+  margin-right: -45px;
+}
+
+/* line 28, ../../app/styles/news.scss */
+.panel {
+  border: 0;
+  margin-bottom: 55px;
+  width: 440px;
+}
+
+/* line 34, ../../app/styles/news.scss */
+.time {
+  color: #373737;
+  text-decoration: underline;
+  font-style: normal;
+  position: relative;
+  font-size: 12px;
+  font-weight: 400;
+  display: block;
+  margin-bottom: 19px;
+}
+
+/* line 45, ../../app/styles/news.scss */
+.department-news {
+  font-family: "../fonts/circe/Circe-ExtraBold.otf", "CirceExtraBold";
+  font-size: 23px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-style: normal;
+  margin-bottom: 57px;
+  margin-top: 64px;
+  display: block;
+}
+
+/* line 56, ../../app/styles/news.scss */
+.gap {
+  margin-left: 13px;
+}
+
+/* line 60, ../../app/styles/news.scss */
+.post-img {
+  width: 440px;
+  height: 270px;
+  padding-bottom: 21px;
+}
+/* line 64, ../../app/styles/news.scss */
+.post-img:hover {
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+  cursor: pointer;
+}
+
+/* line 70, ../../app/styles/news.scss */
+.post-title {
+  color: #373737;
+  font-size: 16px;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 17px;
+}
+
+/* line 78, ../../app/styles/news.scss */
+.post-content {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #595959;
+}
+
+/* line 85, ../../app/styles/news.scss */
+.news-dirs {
+  margin-top: 48px;
+}
+
+/* line 89, ../../app/styles/news.scss */
+.news-dir {
+  color: #5c9bd1;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 67px;
+  text-transform: uppercase;
+  display: inline;
+}
+
+/* line 98, ../../app/styles/news.scss */
+.news-dir-a {
+  text-decoration: none;
+}
+
+/* line 102, ../../app/styles/news.scss */
+.post {
+  display: inline;
+}
+
+/* line 106, ../../app/styles/news.scss */
+.time-inside-post {
+  margin-top: 22px;
+}
+
+/* line 110, ../../app/styles/news.scss */
+.post-title-inside-post {
+  font-size: 23px;
+  font-weight: bold;
+  color: #000;
+  position: relative;
+  margin-bottom: 5px;
+}
+
+/* line 118, ../../app/styles/news.scss */
+.post-info {
+  margin: 30px;
+}
+
+/* line 122, ../../app/styles/news.scss */
+.full-post-img {
+  width: 940px;
+  height: 400px;
+}
+
+/* line 127, ../../app/styles/news.scss */
+.post-content-inside {
+  max-width: 940px;
+  margin-top: 30px;
+  color: #595959;
+}
+
+/* line 133, ../../app/styles/news.scss */
+.share-block {
+  padding-top: 34px;
+  padding-bottom: 94px;
+}
+
+/* line 137, ../../app/styles/news.scss */
+.share {
+  display: inline;
+}
+/* line 140, ../../app/styles/news.scss */
+.share i {
+  font-style: normal;
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+/* line 148, ../../app/styles/news.scss */
+.share .sprite {
+  background: url("../images/share-icons.png") no-repeat top left;
+  height: 15px;
+  display: inline-block;
+  margin-left: 30px;
+}
+/* line 153, ../../app/styles/news.scss */
+.share .sprite:hover {
+  cursor: pointer;
+}
+/* line 157, ../../app/styles/news.scss */
+.share .sprite.facebook-active {
+  background-position: 0 0;
+  width: 9px;
+  height: 18px;
+}
+/* line 162, ../../app/styles/news.scss */
+.share .sprite.instagram {
+  background-position: -19px 0;
+  width: 15px;
+}
+/* line 166, ../../app/styles/news.scss */
+.share .sprite.share-icon {
+  background-position: -44px 0;
+  width: 13px;
+  height: 10px;
+  margin-left: 0px;
+  margin-right: 10px;
+}
+/* line 172, ../../app/styles/news.scss */
+.share .sprite.share-icon:hover {
+  cursor: default;
+}
+/* line 176, ../../app/styles/news.scss */
+.share .sprite.twitter {
+  background-position: -67px 0;
+  width: 19px;
+}
+/* line 180, ../../app/styles/news.scss */
+.share .sprite.vk {
+  background-position: -96px 0;
+  width: 23px;
+  height: 13px;
+}
