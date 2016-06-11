@@ -31,7 +31,9 @@ class NewsController extends Controller
         $em = $this->getDoctrine()->getManager();
         $news = $em->getRepository('DepartmentSiteNewsBundle:News')->findAll();
 
-        return $this->render('news/news.html.twig');
+        return $this->render('news/news.html.twig', array(
+            'news' => $news
+        ));
 
 //        $serialized = $this->container->get('serializer')->serialize($news, 'json');
 //

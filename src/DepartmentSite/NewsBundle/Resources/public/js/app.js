@@ -1,3 +1,4 @@
+alert("app.js");
 (function() {
   'use strict';
   //$route = Routing.generate('news_index');

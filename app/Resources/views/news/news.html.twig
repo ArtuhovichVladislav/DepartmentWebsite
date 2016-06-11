@@ -31,24 +31,32 @@
 {#{% endblock %}#}
 
 {% block body %}
-    {% set news = render(controller('DepartmentSiteNewsBundle:News:getAll'))  %}
-<div class="container" ng-controller="NewsCtrl">
+
+    <script src="{{ asset('bundles/departmentsitenews/js/controllers/news.js') }}" type = "text/javascript"></script>
+    <script type="text/javascript">
+        data = '{{ render(controller('DepartmentSiteNewsBundle:News:getAll')) }}';
+    </script>
+
+    {#{% set data = {{ render(controller('DepartmentSiteNewsBundle:News:getAll')) }} %}#}
+
+<div class="container" ng-controller="NewsCtrl"">
     <div class="row"> <i class="department-news gap">Новости кафедры</i>
-        {% for oneNews in news %}
-        {#<div ng-repeat="oneNews in news ">#}
+        {#{% for oneNews in news %}#}
+        <div ng-repeat="oneNews in news">
             <div class="col-md-6">
                 <div class="panel panel-default">
                     {#<a ng-href="#/news/page">#}
                         {#<img alt="alt" class="post-img" ng-src="{{oneNews.img}}" style="display:block" />#}
                     {#</a> <i class="time">{{oneNews.createdAt}}</i>#}
-                    <a class="post-title" ng-href="#/news/page">{{ oneNews.title }}</a>
-                    <div class="post-content">
-                        {#{{ oneNews.content | limitTo: 100 }}{{oneNews.content.length < 20 ? &#39;...&#39; : &#39;&#39;}}#}
-                    </div>
+                    {#<a class="post-title" ng-href="#/news/page">{{ oneNews.title }}</a>#}
+                    <a class="post-title"> {{ '{{ oneNews.title }}' }}  </a>
+                   {#<div class="post-content">#}
+                       {#{{ oneNews.content | limitTo: 100 }}{{oneNews.content.length < 20 ? &#39;...&#39; : &#39;&#39;}}#}
+                    {#</div>#}
                 </div>
             </div>
-        {#</div>#}
-        {% endfor %}
+        </div>
+        {#{% endfor %}#}
     </div>
     {#<div ng-include="&#39;layout/pagination.html&#39;"></div>#}
     {#{% include ':layout:pagination.html.twig' %}#}
